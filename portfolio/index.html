@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="shortcut icon" href="./Images/webpage_icon.jpg" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/e104690292.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+
+
+
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                <p class="logo"><span>g</span>1rix</p>
+                <ul class="nav-links" id="small">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <!-- <i class="fas fa-times" onclick="openmenu()"></i> -->
+                </ul>
+                <!-- <i class="fa-solid fa-bars" onclick="closemenu()"></i> -->
+            </nav>
+            <div id="hide">
+            <div id="navbar">
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <!-- <i class="fas fa-times" onclick="openmenu()"></i> -->
+                </ul>
+            </div>
+            <span id="navbarlist">
+                <!-- <i class="fa-solid fa-arrow-down-wide-short"></i> -->
+                <i class="fa-solid fa-arrow-up-short-wide"></i>
+            </span>
+            </div>
+            <div class="header-text">
+                <!-- <p>Full Stack Developer</p> -->
+                <h1>Hi, It's <span>Giri</span><br></h1>
+                <h1>Welcome to My Portfolio</h1>
+                <div>
+                    <div class="social-icons homepage-icons">
+                        <div>
+                            <a href="https://www.linkedin.com/in/giri-dharan-18179b23b/?skipRedirect=true">
+                                <i class="fa-brands fa-linkedin"></i>
+                            </a>
+                            <a href="https://github.com/gir1x">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                            <a href="https://www.facebook.com/profile.php?id=100052392804177">
+                                <i class="fa-brands fa-facebook"></i>
+                            </a>
+                            <a href="https://x.com/GIRI08482869">
+                                <i class="fa-brands fa-x-twitter"></i>
+
+                            </a>
+                        </div>
+                    </div>
+                </div class="buttondiv">
+                    <a href="./Environment/Resume.pdf" class="btn btn2">View Resume</a>
+                    <a href="https://www.linkedin.com/in/giri-dharan-18179b23b/?skipRedirect=true" class="btn btn2">Hire me</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Images/ME_COWBOY2.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">
+                        About Me
+                    </h1>
+                    <!-- <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus culpa corporis ratione voluptatum. Magni saepe consectetur beatae minima repudiandae similique asperiores natus, totam a veritatis sint, deleniti hic, voluptatibus esse!</p> -->
+                    <p>B.E. graduate in Electronics and Communication Engineering from KCG College of Technology with a strong foundation in signal processing and embedded systems. Passionate about cybersecurity, networking, and emerging tech.
+Successfully developed an EEG-based stress classification system using Python ML. Known as a quick learner, problem
+solver, and team player.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links" onclick="opentab('education',this)">Education</p>
+                        <p class="tab-links" onclick="opentab('experience',this)">Experience</p>
+                        <p class="tab-links active-link" onclick="opentab('skills',this)">Skills</p>
+                    </div>
+                    <div class="tab-contents active-tab non-mobile" id="skills">
+                        <!-- <ul>
+                            <li><span>Lorem, ipsum.</span><br>Lorem ipsum dolor sit.</li>
+                            <li><span>Lorem, ipsum.</span><br>Lorem ipsum dolor sit.</li>
+                            <li><span>Lorem, ipsum.</span><br>Lorem ipsum dolor sit.</li>
+                        </ul> -->
+                        <div style="display: inline-flex;">
+                            <div id="skills1" class="block"><img src="./Icons/java.png" alt="">Java</div>
+                            <div id="skills3" class="block"> <img src="./Icons/python.png" alt="">Python</div>
+                            <div id="skills2" class="block"> <img src="./Icons/html-5.png" alt="">Html</div>
+                            
+                        </div>
+                        <div style="display: inline-flex;">
+                                <div id="skills3" class="block"> <img src="./Icons/css-3.png" alt="">Css</div>
+                               <div id="skills4" class="block"> <img src="./Icons/sql-server.png" alt="">SQL</div>
+                               <div id="skills5" class="block"> <img src="./Icons/java-script.png" alt="">Java Script</div>
+                        </div>
+                        <div style="display: inline-flex;">
+                            <div id="skills7" class="block"><img src="./Icons/gnu-bash.png" alt="">Bash</div>
+                            <!-- <div id="skills8" class="block"><img src="./Icons/local-area.png" alt="">Networking</div> -->
+                            <div id="skills6" class="block"> <img src="./Icons/technology.png" alt="">J2EE</div>
+
+                        </div>
+                    </div>
+                    <div class="tab-contents active-tab small-screen" id="skills">
+                        <!-- <ul>
+                            <li><span>Lorem, ipsum.</span><br>Lorem ipsum dolor sit.</li>
+                            <li><span>Lorem, ipsum.</span><br>Lorem ipsum dolor sit.</li>
+                            <li><span>Lorem, ipsum.</span><br>Lorem ipsum dolor sit.</li>
+                        </ul> -->
+                        <div style="display: inline-flex;">
+                            <div id="skills1" class="block"><img src="./Icons/java.png" alt="">Java</div>
+                            <div id="skills3" class="block"> <img src="./Icons/python.png" alt="">Python</div>
+                            
+                        </div>
+                        <div style="display: inline-flex;">
+                            <div id="skills2" class="block"> <img src="./Icons/html-5.png" alt="">Html</div>
+                            <div id="skills3" class="block"> <img src="./Icons/css-3.png" alt="">Css</div>
+
+                        </div>
+
+                        <div style="display: inline-flex;">
+                               <div id="skills4" class="block"> <img src="./Icons/sql-server.png" alt="">SQL</div>
+                               <div id="skills5" class="block"> <img src="./Icons/java-script.png" alt="">Java Script</div>
+                        </div>
+                        <div style="display: inline-flex;">
+                            <div id="skills7" class="block"><img src="./Icons/gnu-bash.png" alt="">Bash</div>
+                            <!-- <div id="skills8" class="block"><img src="./Icons/local-area.png" alt="">Networking</div> -->
+                            <div id="skills6" class="block"> <img src="./Icons/technology.png" alt="">J2EE</div>
+
+                        </div>
+                    </div>
+                    <div class="tab-contents active-link" id="experience">
+                        <ul>
+                            <li><span>Intern – Airports Authority of India (AAI), Electronics Department</span><br>
+                                <ul style="margin-top: 5px;">
+                                    <li>Completed internship at Chennai Airport’s Electronics Department.</li>
+                                    <li>Gained hands-on knowledge in communication and navigation systems.</li>
+                                </ul>
+                            </li>
+                            <br>
+                            <li><span>Centre for Transformation Leadership – KCG Tech(Workshops)</span><br>
+                                <ul>
+                                    <li style="margin-top: 5px;">Skills: Communication, Design Thinking, Team Building</li>
+                                    <li>Participated in skill-building programs focused on leadership and collaboration.</li>
+                                </ul>
+                            
+                            </li>
+
+                            <!-- <li><span>Lorem, ipsum.</span><br></li>
+                            <li><span>Lorem, ipsum.</span><br></li> -->
+                        </ul>
+                    </div><div class="tab-contents active-link" id="education">
+                        <ul>
+                            <li><span>Vyasa Vidyalaya Matric Hr Sec School, Chennai</span><br>10th | TNBHSE | 72%</li>
+
+                            <li><span>Vyasa Vidyalaya Matric Hr Sec School, Chennai</span><br>12th | TNBHSE | 76%</li>
+                            
+                            <li><span>KCG College of Technology, Chennai</span><br>B.E. - Electronics and Communication Engineering | CGPA: 7.0 / 10</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="portfolio">
+        <div class="container container-wide">
+            <div class="sub-title">Works</div>
+            <div class="work-list">
+                <div class="work">
+                    <img src="Images/weather.png" alt="">
+                    <div class="layer">
+                        <!-- <h3>Lorem, ipsum.</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae, inventore! </p> -->
+                        <h3>Weather Forecast App</h3>
+                        <p>
+                        A real-time weather application that fetches live temperature, humidity,and climate conditions based on user input using a public weather API.</p>
+                        <!-- <br> -->
+                        <a href="https://github.com/gir1x/Web-Project-/tree/wheatherfetch"><i class="fa-solid fa-square-up-right"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/ins.png" alt="">
+                    <div class="layer">
+                        <!-- <h3>Lorem, ipsum.</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae, inventore! </p> -->
+                        <h3>Instagram Login UI</h3>
+                        <p> 
+                            A pixel-perfect clone of Instagram’s login page designed using HTML and CSS,focusing on layout accuracy, responsive styling.
+                        </p>
+                        <!-- <br> -->
+                        <a href="https://github.com/gir1x/Web-Project-/tree/instagram"><i class="fa-solid fa-square-up-right"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/google.png" alt="">
+                    <div class="layer">
+                        <!-- <h3>Lorem, ipsum.</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae, inventore! </p> -->
+                        <h3>Google Homepage UI</h3>
+                        <p>A responsive front-end recreation of Google’s homepage, built using pure HTML and CSS with a focus on layout and visual accuracy.</p>
+                        <!-- <br> -->
+                        <a href="https://github.com/gir1x/Web-Project-/tree/google"><i class="fa-solid fa-square-up-right"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/calculator.png" alt="">
+                    <div class="layer">
+                        <!-- <h3>Lorem, ipsum.</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae, inventore! </p> -->
+                        <h3>Calculator Application</h3>
+                        <p>A functional calculator built using HTML, CSS, and JavaScript that supports basic arithmetic operations with a clean and minimal user interface.</p>
+                        <!-- <br> -->
+                        <a href="https://github.com/gir1x/Web-Project-/tree/calculator"><i class="fa-solid fa-square-up-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="contact">
+        <div class="container container-wide">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <!-- <p>Contact@example.com</p> -->
+                    <p>Email : <a href="https://mail.google.com/mail/u/1/#inbox"></a>dharan24giri@gmail.com</p>
+                    <p>Mobile : 6379025125</p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/g1rix/">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="https://www.facebook.com/profile.php?id=100052392804177">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                        <a href="https://x.com/GIRI08482869">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+                        <!-- <a href="">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a> -->
+                        
+                    </div>
+                
+                </div>
+                <div class="contact-right">
+                    <form action="">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright ⓒ owned by <span>g</span>1rix. </p>
+        </div>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/e104690292.js" crossorigin="anonymous"></script>
+   
+</body>
+</html>

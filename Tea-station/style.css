@@ -1,0 +1,314 @@
+@import url("https://fonts.googleapis.com/css?family=Catamaran:400,700|Grand+Hotel");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* background-color: black; */
+  /* width: 100vh; */
+}
+#front{
+    width: 100%;
+    height: 100vh;
+    /* background-image: url(./images/main-bcg.jpeg);
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+    background-size: cover;
+    background-position:center; */
+    position: relative;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("./images/main-bcg.jpeg") center/cover no-repeat fixed;
+    /* position: absolute; */
+}
+
+#hide i{
+    color: #ffffff;
+    /* background-color: #000000; */
+    cursor: pointer;
+    padding: 10px;
+    font-size: x-large;
+    position: fixed;
+    z-index: 9000;
+
+}
+#navbar{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: whitesmoke;
+    justify-content: center;
+    display: none;
+    height: 50px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%) translateY(-100%);
+    width: 100%;
+    max-width: 100%;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 9000;
+}
+#navbar a{
+    background-color: whitesmoke;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    margin-right: 10%;
+    /* display: none; */
+    text-decoration: none;
+    
+}
+.banner a{
+    border-radius: 20px;
+}
+#hide i.clicked{
+    color: black;
+}
+#navbar a, #Home{
+    margin-left: 10%;
+}
+#navbar.shownav{
+    display: block;
+    padding-top: 13px;
+    transform: translateX(-50%) translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+}
+.banner {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+.banner h2{
+    color: #678e3e;
+    /* font-family: 'Courier New', Courier, monospace; */
+    font-style: italic;
+    font-size: 25px;
+}
+.banner h1{
+    color: whitesmoke;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px;
+    /* font-style: oblique; */
+    font-style: inherit;
+    margin-bottom: 35px;
+}
+.banner a{
+    padding: 20px;
+    text-decoration: none;
+    color: white;
+    font-size: x-large;
+    background-color: #678e3e;
+    /* outline: 0.125rem solid #678e3e; */
+    /* border: 7px double #678e3e; */
+    
+}
+
+/* #navbarlist.hideicon{
+    display: none;
+} */
+
+#intro{
+    display: flex;
+    background-color: #f1f5f8;
+    /* padding: 2.5rem 0; */
+    /* justify-content: space-between; */
+    min-width: 100%;
+    justify-content: space-between;
+    
+}
+#intro h3{
+    justify-content: center;
+    margin-left: 33%;
+}
+div.active{
+    padding: 2.5rem 0;
+    /* margin: 2rem 2rem; */
+}
+/* #intro .second h3{
+    margin-left: 36%;
+}
+div.thirdh3{
+    margin-left: 46%;
+
+} */
+div.active:hover{
+    background-color: rgb(255, 255, 255);
+    justify-content: center;
+    align-items: center;
+}
+#service{
+    /* justify-content: space-around; */
+    transform: translateX(25%) translateY(0);
+    gap: 70px;
+    display: flex;
+
+}
+#service .center div{
+    padding-top: 2.7%;
+    /* display: flex;
+    flex-direction: row; */
+    padding-bottom: 2.7%;
+    justify-content: space-around;
+    margin-right: 10%;
+}
+
+#service .center h2{
+     color: #678e3e;
+ font-style: italic;
+}
+#non-mobile{
+    display: none;
+    opacity: 0;
+}
+.center a{
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    font-size: large;
+    background-color: #678e3e;
+    border-radius: 10px;
+}
+#image img{
+    border: 2px solid #678e3e;
+    width: 400px;
+    border-radius: 10px;
+}
+#image img:hover{
+    transform: scale(1.02);
+}
+
+
+.about {
+ text-align: center;
+ padding: 80px 20px;
+ background: #f1f5f8;
+ display: flex;
+ justify-content: space-evenly;
+}
+
+.about h2 {
+ color: #678e3e;
+ font-style: italic;
+}
+
+.about h1 {
+ margin-bottom: 40px;
+}
+
+.image-items {
+ display: flex;
+ justify-content: center;
+ gap: 30px;
+ flex-wrap: wrap;
+}
+
+.item {
+ background: white;
+ padding: 15px;
+ border-radius: 10px;
+ width: 250px;
+}
+
+.item img {
+ width: 100%;
+ border-radius: 10px;
+}
+
+.item h3 {
+ margin: 10px 0;
+}
+
+
+#explore{
+    background: #ffffff;
+    padding: 80px 20px;
+}
+#explore .explore-intro{
+    text-align: center;
+    margin-bottom: 60px;
+}
+.explore-intro h3{
+  color: #678e3e;
+  font-style: italic;
+}
+.service-img {
+  position: relative;
+}
+.explore-product{
+    display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 3fr));
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+.card{
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+.service-img img {
+  width: 100%;
+  display: block;
+  
+}
+.service-info {
+  padding: 40px 20px 30px;
+}
+.service {
+  background: #678e3e;
+  color: white;
+  padding: 6px 15px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 14px;
+}
+#service-device{
+    display: none;
+}
+
+ @media (max-width: 800px) {
+
+    #navbar{
+        height: 30px;
+    }
+    #navbar a{
+        margin-right: 0px;
+
+    }
+    #hide i{
+        font-size: large;
+        margin-top: -5px;
+    }
+    #navbar.shownav{
+        padding-top: 4px;
+    }
+    #intro{
+        display: block;
+        
+    }
+    #service{
+    transform: translateX(3%) translateY(0);
+    display: none;
+        
+    }
+    #service-device{
+        display: inline-block;
+    }
+ }
+
+
+
+ footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 30px 15px;
+}
